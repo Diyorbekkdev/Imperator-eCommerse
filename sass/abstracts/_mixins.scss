@@ -31,10 +31,10 @@ $rem-base: 16px;
     body-1: 140px,
     subtitle-2: 140px,
     body-2: 160px,
-    caption: 140px,
-    overline: 140px,
+    caption: 14px,
+    overline: 14px,
   );
-
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: calculateRem(map-get($font-sizes, $heading));
   line-height: calculateRem(map-get($line-heights, $heading));
