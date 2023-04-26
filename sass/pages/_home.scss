@@ -1,0 +1,82 @@
+.header {
+  &_carousel {
+    position: relative;
+    .item {
+      background: url("../../assets/images/home/background-main.png");
+      // background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      padding-bottom: 788px;
+      width: 100%;
+      .home_container {
+        position: relative;
+        .main_hero {
+          position: absolute;
+          width: 50%;
+          right: 0;
+          bottom: -800px;
+        }
+      }
+    }
+  }
+  .owl-theme .owl-nav {
+    // margin-top: 10px;
+    display: none;
+  }
+  .owl-theme .owl-dots {
+
+    position: absolute;
+    // top: 0;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    // height: 50px;
+    // width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // width: 20px;
+  }
+//   .owl-theme .owl-dot{
+//     padding: 0;
+//     width: 10px; /* or any other width you prefer */
+//     height: 10px; /* or any other height you prefer */
+//     margin-right: 10px; /* or any other margin you prefer */
+//     border: 2px solid black; /* or any other border style you prefer */
+//     border-radius: 50%; /* make the dots circular */
+//   }
+  .owl-theme .owl-dots .owl-dot span {
+    background: #0d0d0d31;
+    width: 10px;
+    height: 10px;
+  }
+  .owl-theme .owl-dots .owl-dot.active{
+    border: 1px solid #0d0d0d;
+    padding: 12px  !important;
+    border-radius: 50%;
+    transition: border 0.3s ease-in-out;
+  }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: #000000bb;
+    border-radius: 32px;
+    margin: 0;
+    transition: background-color 0.3s ease-in-out;
+    
+    // padding: 10px;
+    // margin: 10px;
+    // width: 32px;
+    // height: 32px;
+  }
+  .header_title{
+    width: 49%;
+    position: absolute;
+    top: 400px;
+    // padding-top: 400px;
+    
+    h1,p,a{
+        color: #fff;
+    }
+  }
+}
