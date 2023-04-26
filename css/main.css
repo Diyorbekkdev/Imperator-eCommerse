@@ -67,8 +67,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .header .header_title {
   width: 49%;
   position: absolute;
-  top: 400px;
+  top: 230px;
 }
-.header .header_title h1, .header .header_title p, .header .header_title a {
+.header .header_title h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  letter-spacing: -0.01em;
+  color: #000;
   color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 34px;
+  line-height: 140%;
+  /* or 48px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
 }

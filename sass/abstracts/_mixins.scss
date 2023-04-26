@@ -37,7 +37,7 @@ $rem-base: 16px;
 
   font-weight: 700;
   font-size: calculateRem(map-get($font-sizes, $heading));
-  line-height: calculateRem(map-get($line-heights, $heading));
+  // line-height: calculateRem(map-get($line-heights, $heading));
   letter-spacing: -0.01em;
   color: #000;
 }

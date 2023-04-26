@@ -1,3 +1,6 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
 .header {
   &_carousel {
     position: relative;
@@ -72,11 +75,21 @@
   .header_title{
     width: 49%;
     position: absolute;
-    top: 400px;
+    top: 230px;
     // padding-top: 400px;
-    
-    h1,p,a{
+    h1{ 
+        @include heading(h1);
         color: #fff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700  !important;
+        font-size: 34px;
+        line-height: 140%;
+        /* or 48px */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.25px;
     }
   }
 }
