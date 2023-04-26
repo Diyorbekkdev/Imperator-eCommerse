@@ -65,15 +65,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   transition: background-color 0.3s ease-in-out;
 }
 .header .header_title {
-  width: 49%;
+  max-width: 588px;
   position: absolute;
   top: 230px;
 }
 .header .header_title h1 {
-  font-weight: 700;
-  font-size: 6rem;
-  letter-spacing: -0.01em;
-  color: #000;
   color: #fff;
   font-family: "Montserrat";
   font-style: normal;
@@ -84,4 +80,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   display: flex;
   align-items: center;
   letter-spacing: 0.25px;
+}
+.header .header_title p {
+  padding-top: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+  color: #fff;
+}
+.header .header_title .header_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.header .header_title .header_btn .bce {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFC000;
+  text-transform: uppercase;
 }

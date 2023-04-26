@@ -1,5 +1,5 @@
-@use '../abstracts/mixins';
-@use '../abstracts/variables';
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 .header {
   &_carousel {
@@ -28,7 +28,6 @@
     display: none;
   }
   .owl-theme .owl-dots {
-
     position: absolute;
     // top: 0;
     right: 0;
@@ -42,22 +41,22 @@
     gap: 20px;
     // width: 20px;
   }
-//   .owl-theme .owl-dot{
-//     padding: 0;
-//     width: 10px; /* or any other width you prefer */
-//     height: 10px; /* or any other height you prefer */
-//     margin-right: 10px; /* or any other margin you prefer */
-//     border: 2px solid black; /* or any other border style you prefer */
-//     border-radius: 50%; /* make the dots circular */
-//   }
+  //   .owl-theme .owl-dot{
+  //     padding: 0;
+  //     width: 10px; /* or any other width you prefer */
+  //     height: 10px; /* or any other height you prefer */
+  //     margin-right: 10px; /* or any other margin you prefer */
+  //     border: 2px solid black; /* or any other border style you prefer */
+  //     border-radius: 50%; /* make the dots circular */
+  //   }
   .owl-theme .owl-dots .owl-dot span {
     background: #0d0d0d31;
     width: 10px;
     height: 10px;
   }
-  .owl-theme .owl-dots .owl-dot.active{
+  .owl-theme .owl-dots .owl-dot.active {
     border: 1px solid #0d0d0d;
-    padding: 12px  !important;
+    padding: 12px !important;
     border-radius: 50%;
     transition: border 0.3s ease-in-out;
   }
@@ -66,30 +65,56 @@
     border-radius: 32px;
     margin: 0;
     transition: background-color 0.3s ease-in-out;
-    
+
     // padding: 10px;
     // margin: 10px;
     // width: 32px;
     // height: 32px;
   }
-  .header_title{
-    width: 49%;
+  .header_title {
+    max-width: 588px;
     position: absolute;
     top: 230px;
     // padding-top: 400px;
-    h1{ 
-        @include heading(h1);
-        color: #fff;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700  !important;
-        font-size: 34px;
+    h1 {
+      // @include heading(h1);
+      color: #fff;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700 !important;
+      font-size: 34px;
+      line-height: 140%;
+      /* or 48px */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.25px;
+    }
+    p {
+      padding-top: 16px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1px;
+      color: #fff;
+    }
+    .header_btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      .bce {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 14px;
         line-height: 140%;
-        /* or 48px */
-
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.25px;
+        color: #FFC000;
+        text-transform: uppercase;
+      }
     }
   }
 }
