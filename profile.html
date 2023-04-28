@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil_Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!--  NAVBAR-START  -->
+    <div id="language">
+      <div class="container">
+        <div class="lang">
+          <a href="#">RU</a>
+          <a href="#">UZB</a>
+        </div>
+      </div>
+    </div>
+    <nav id="navbar">
+      <div class="container navbar__container">
+        <div class="nav-left">
+          <button class="hamburger" id="navbar-open">
+            <img
+              width="40px"
+              src="./assets/images/sotrudnichestvo/hamburger.svg"
+              alt="menu"
+            />
+          </button>
+          <a class="mobile-img" href="#">
+            <img width="41px" src="assets/images/home/logo-footer.svg" alt="" />
+          </a>
+          <a class="desktop-img" href="#">
+            <img src="assets/images/sotrudnichestvo/MILANDI.svg" alt="" />
+          </a>
+        </div>
+        <div class="nav-middle" id="navbar-responsive">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Категории</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Сотрудничество</a>
+            </li>
+            <button class="close" id="navbar-close">
+              <img
+                width="45px"
+                src="./assets/images/sotrudnichestvo/close.svg"
+                alt="close"
+              />
+            </button>
+            <div class="nav-btns">
+              <a href="#">Войти</a>
+              <a href="#">Зарегистрироваться</a>
+            </div>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="nav-right-btns">
+            <a href="#">Войти</a>
+            <a href="#">Зарегистрироваться</a>
+          </div>
+          <a href="#">
+            <img src="assets/images/home/korzinka-navbar.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--  NAVBAR-END  -->
+
+    <!--  PROFIL-START  -->
+    <section id="profil">
+      <div class="container profil__container">
+        <div class="profil-left">
+          <div class="profil-img">
+            <img src="./assets/images/profil-page/brat.png" alt="" />
+          </div>
+          <a href="#">Изменить</a>
+        </div>
+        <div class="profil-right">
+          <form action="">
+            <div class="form-left">
+              <div class="name">
+                <label for="name">Имя и фамилия:</label>
+                <input
+                  id="name"
+                  type="text"
+                  required
+                  placeholder="Александр Сергеевич"
+                />
+              </div>
+              <div class="number">
+                <label for="number">Номер телефона:</label>
+                <input
+                  id="number"
+                  type="number"
+                  required
+                  placeholder="+998 (93) 552-22-22"
+                />
+              </div>
+              <div class="password">
+                <label for="password">Пароль</label>
+                <input
+                  id="password"
+                  type="password"
+                  required
+                  placeholder="Enter your password"
+                />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <a href="#">Изменить</a>
+              </div>
+            </div>
+            <div class="address">
+              <label for="address">Адрес</label>
+              <input
+                id="address"
+                type="text"
+                required
+                placeholder="Ташкент, ул. Янги сергели, д-9, кв-30"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--  PROFIL-END  -->
+
+    <!--  FOOTER-START  -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer-desktop">
+          <div class="footer-desktop-left">
+            <div class="proimperia">
+              <h4>про imperia</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+                pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+              </p>
+              <a href="#">
+                <img src="./assets/images/home/logo-footer.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer-left-menu">
+              <div class="contact">
+                <h4>контакты</h4>
+                <a href="tel: +998 90 958 78 87">+998 90 958 78 87</a>
+                <a href="mailto: support@fonon.uz">support@fonon.uz</a>
+              </div>
+              <div class="work-time">
+                <h4>рабочее время</h4>
+                <p>По будням 9:00 to 18:00</p>
+                <p>В выходные 11:00 to 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-desktop-right">
+            <div class="footer-menu">
+              <h4>Меню</h4>
+              <a href="#">Главная</a>
+              <a href="#">О нас</a>
+              <a href="#">Категории</a>
+              <a href="#">Сотрудничество</a>
+            </div>
+            <div class="category">
+              <h4>категории</h4>
+              <a href="#">Женская одежда</a>
+              <a href="#">Мужская одежда</a>
+              <a href="#">Детская одежда</a>
+              <a href="#">Обувь</a>
+              <a href="#">Сумки</a>
+              <a href="#">Аксесуары</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mobile">
+          <p>
+            High fidelity wireframes include more real content, specific
+            typography choices, and information on image.
+          </p>
+          <div class="footer-mobile-menu">
+            <div class="mobile-menu-left">
+              <a href="#">Catalog</a>
+              <a href="#">Popular</a>
+              <a href="#">Pricing</a>
+              <a href="#">Features</a>
+            </div>
+            <div class="mobile-menu-right">
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+          <div class="footer-mobile-bottom">
+            <div class="location">
+              <a href="#">
+                <img src="assets/images/sotrudnichestvo/locationn.svg" alt="" />
+              </a>
+              <p>Los Angeles, 359 Hidden Valley Road</p>
+            </div>
+            <div class="mail">
+              <a href="#">
+                <img src="assets/images/sotrudnichestvo/email.svg" alt="" />
+              </a>
+              <p>Hellohero@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  FOOTER-END  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
