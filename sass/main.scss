@@ -1,18 +1,21 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-@import 'abstracts/container';
-@import 'base/reset';
-@import 'base/typhography';
-@import 'components/buttons';
-@import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/forms';
-@import 'layout/grid';
-@import 'layout/footer';
-@import 'pages/sotrudnichestvo';
-@import 'pages/home';
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/container";
+@import "base/reset";
+@import "base/typhography";
+@import "components/buttons";
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/footer";
+@import "pages/sotrudnichestvo";
+@import "pages/home";
 
-//Behruz mackbook-16 stylini uladi 
-@import 'pages/mackbook-16';
-//Behruz mackbook-16 stylini uladi 
+//Behruz mackbook-16 stylini uladi
+@import "pages/mackbook-16";
+//Behruz mackbook-16 stylini uladi
 
+//Behruz mackbook-17 stylini uladi
+@import "pages/mackbook-17";
+//Behruz mackbook-17 stylini uladi
