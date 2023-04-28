@@ -1,0 +1,61 @@
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#inputField {
+  width: 82%;
+  border: 2px solid transparent;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 12px 15px;
+  color: black;
+  font-weight: 500;
+  outline: none;
+  caret-color: rgb(37, 137, 255);
+  transition-duration: 0.3s;
+  font-family: "Montserrat";
+}
+
+.userIcon {
+  position: absolute;
+  fill: rgb(37, 137, 255);
+  width: 12px;
+  top: -23px;
+  left: -15px;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.usernameLabel {
+  position: absolute;
+  top: -25px;
+  left: 5px;
+  color: rgb(37, 137, 255);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  overflow: hidden;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+#inputField:focus ~ .usernameLabel,
+#inputField:valid ~ .usernameLabel {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus ~ .userIcon,
+#inputField:valid ~ .userIcon {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus,
+#inputField:valid {
+  background-color: #ddd;
+  transition-duration: 0.3s;
+}

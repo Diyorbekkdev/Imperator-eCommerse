@@ -1,0 +1,62 @@
+#category {
+  background-color: #e5e5e5;
+  font-family: "Montserrat";
+}
+
+.category__item {
+  img {
+    width: 100%;
+  }
+}
+// --------------------------------------
+
+// --------------------------------------
+#pay {
+  font-family: "Montserrat";
+  background: #e5e5e5;
+  .pay_title {
+    h1 {
+      text-align: center;
+    }
+  }
+  .pay_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    .pay__right {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .pay_btn {
+        width: 82%;
+        padding: 20px 0;
+        transition: 0.3;
+        background-color: yellow;
+        transition: 0.3s ease-in;
+        &:hover {
+          background-color: rgb(67, 137, 255);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 896px) {
+  .pay_item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-column-gap: 0px !important;
+  }
+  .pay__left {
+    img {
+      display: none;
+    }
+  }
+  #inputField {
+    width: 100%;
+  }
+  .pay_btn {
+    width: 100% !important;
+  }
+}
