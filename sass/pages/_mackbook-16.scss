@@ -1,0 +1,95 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+$black: #131313;
+$black-opacity: rgba(0, 0, 0, 0.2);
+$light-grey: #fafafa;
+$yellow: #ffc000;
+$dark-grey: rgba(0, 0, 0, 0.5);
+$grey-5: rgba(0, 0, 0, 0.05);
+$white: #fff;
+
+.m16_main {
+  background-color: $light-grey;
+  .m16_product {
+    padding-top: 80px;
+    .m16_cards {
+      .m16_card:first-child {
+        margin-bottom: 24px;
+      }
+      .m16_card {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: $white;
+        border-radius: 12px;
+        .m16_card_photo {
+          img {
+            height: 100%;
+          }
+        }
+        .m16_card_content {
+          padding: 25px 48px 27px 30px;
+          h2 {
+            color: $black;
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .m16_card_p {
+            font-size: 14px;
+            line-height: 160%;
+            margin-top: 70px;
+            margin-bottom: 53px;
+            color: $black;
+          }
+          .m16_card_bottom {
+            display: flex;
+            justify-content: space-between;
+            .m16_card_price {
+              font-size: 16px;
+              span {
+                b {
+                  font-weight: 600;
+                }
+                margin-left: 40px;
+              }
+            }
+            .m16_card_plus {
+              display: flex;
+              span {
+                padding: 4px 43px;
+                background-color: $light-grey;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+              }
+              button {
+                width: 37px;
+                height: 37px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $yellow;
+                border: none;
+                outline: none;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: 990px) {
+        .m16_card {
+         .m16_card_content {
+          .m16_card_p {
+            display: none;
+          }
+         }
+         .m16_card_bottom {
+          flex-direction: column;
+         }
+        }
+      }
+    }
+  }
+}

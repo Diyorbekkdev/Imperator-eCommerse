@@ -1021,3 +1021,82 @@ footer .footer-mobile {
   line-height: 140%;
   letter-spacing: 0.44px;
 }
+
+.m16_main {
+  background-color: #fafafa;
+}
+.m16_main .m16_product {
+  padding-top: 80px;
+}
+.m16_main .m16_product .m16_cards .m16_card:first-child {
+  margin-bottom: 24px;
+}
+.m16_main .m16_product .m16_cards .m16_card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_photo img {
+  height: 100%;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content {
+  padding: 25px 48px 27px 30px;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content h2 {
+  color: #131313;
+  font-size: 24px;
+  font-weight: 700;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_p {
+  font-size: 14px;
+  line-height: 160%;
+  margin-top: 70px;
+  margin-bottom: 53px;
+  color: #131313;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom .m16_card_price {
+  font-size: 16px;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom .m16_card_price span {
+  margin-left: 40px;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom .m16_card_price span b {
+  font-weight: 600;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom .m16_card_plus {
+  display: flex;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom .m16_card_plus span {
+  padding: 4px 43px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_bottom .m16_card_plus button {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc000;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+@media (max-width: 990px) {
+  .m16_main .m16_product .m16_cards .m16_card .m16_card_content .m16_card_p {
+    display: none;
+  }
+  .m16_main .m16_product .m16_cards .m16_card .m16_card_bottom {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
