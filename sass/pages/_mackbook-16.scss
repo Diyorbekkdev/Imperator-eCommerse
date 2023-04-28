@@ -14,8 +14,11 @@ $white: #fff;
   .m16_product {
     padding-top: 80px;
     .m16_cards {
-      .m16_card:first-child {
+      .m16_card:not(:last-child) {
         margin-bottom: 24px;
+      }
+      .m16_card_none {
+        display: none !important;
       }
       .m16_card {
         width: 100%;
@@ -23,6 +26,7 @@ $white: #fff;
         justify-content: space-between;
         background-color: $white;
         border-radius: 12px;
+        height: 295px;
         .m16_card_photo {
           img {
             height: 100%;
@@ -80,14 +84,52 @@ $white: #fff;
       }
       @media (max-width: 990px) {
         .m16_card {
-         .m16_card_content {
-          .m16_card_p {
-            display: none;
+          width: 100%;
+          margin-right: 24px !important;
+          padding: 10px;
+          justify-content: flex-start;
+          height: 120px;
+          .m16_card_photo {
+            margin-right: 20px;
           }
-         }
-         .m16_card_bottom {
-          flex-direction: column;
-         }
+          .m16_card_content {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0px;
+            .m16_card_h2 {
+              text-align: left;
+              font-size: 32px;
+            }
+            .m16_card_p {
+              display: none;
+            }
+            .m16_card_bottom {
+              #none_span {
+                display: none !important;
+              }
+              display: flex;
+              span {
+               height: 30px;
+                background-color: $light-grey;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+              }
+              button {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $yellow;
+                border: none;
+                outline: none;
+                color: $white;
+              }
+            }
+          }
         }
       }
     }
