@@ -1156,6 +1156,15 @@ footer .footer-mobile {
 .m17_main * {
   font-family: "Montserrat", sans-serif;
 }
+.m17_main .m17_h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.m17_main .m17_pro {
+  padding-bottom: 64px;
+}
 
 .m17_payment .m17_payment_container .m17_payment_heading {
   text-align: center;
@@ -1222,6 +1231,74 @@ footer .footer-mobile {
   }
   .m17_payment .m17_payment_container .m17_form .m17_form_right {
     padding-right: 35px !important;
+  }
+}
+
+.m17_card_shop {
+  margin-top: 64px;
+}
+.m17_card_shop .m17_shop_h1 {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+.m17_card_shop .m17_card_container .m17_card1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.m17_card_shop .m17_card_container .m17_card1 img {
+  width: 100%;
+}
+@media (max-width: 850px) {
+  .m17_card_shop .m17_card_container .m17_card1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .m17_card_shop .m17_card_container .m17_card1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+.m17_card_type .m17_type_container h1 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+.m17_card_type .m17_type_container .m17_type_row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 17px;
+}
+.m17_card_type .m17_type_container .m17_type_row .categ {
+  background-color: #ffc000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m17_card_type .m17_type_container .m17_type_row .categ span {
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 1100px) {
+  .m17_card_type .m17_type_container .m17_type_row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .m17_card_type .m17_type_container .m17_type_row .categ {
+    margin-top: 20px;
+    padding: 26px 0px;
+  }
+  .m17_card_type .m17_type_container .m17_type_row img {
+    width: 100%;
   }
 }
 
