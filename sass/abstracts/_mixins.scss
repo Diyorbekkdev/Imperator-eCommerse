@@ -34,7 +34,7 @@ $rem-base: 16px;
     caption: 140%,
     overline: 140%,
   );
-
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: calculateRem(map-get($font-sizes, $heading));
   // line-height: calculateRem(map-get($line-heights, $heading));
@@ -91,3 +91,17 @@ $rem-base: 16px;
 // .box{
 //   @include box-shadow(1);
 // }
+
+@mixin media($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+
+@mixin first-mobile ($px) {
+  @media (min-width: $px) {
+    @content;
+  }
+}
+
