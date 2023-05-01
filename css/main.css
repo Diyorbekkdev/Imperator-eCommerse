@@ -355,6 +355,83 @@ body.dark #category {
 body.dark #category h1 {
   color: var(--skin-color);
 }
+body.dark #category h2 {
+  color: #fff;
+}
+body.dark #category .desk_light {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -200px;
+  right: 1000px;
+}
+body.dark #category .category_item {
+  position: relative;
+}
+body.dark #category .category_item img {
+  z-index: 2;
+}
+
+body.dark #filter {
+  background: url("../../assets/icons/darkbg.svg");
+}
+body.dark #filter .breadcrumb a, body.dark #filter .breadcrumb li {
+  color: var(--skin-color);
+}
+body.dark #filter .titles {
+  color: var(--skin-color);
+}
+body.dark #filter .ap-tab-link {
+  color: #fff !important;
+}
+body.dark #filter .ap-tab-link.active-tab {
+  color: var(--skin-color) !important;
+}
+body.dark #filter p {
+  color: #fff;
+}
+body.dark #filter .star_price, body.dark #filter .star_text {
+  color: var(--skin-color);
+}
+
+.star_bg {
+  display: none;
+}
+
+body.dark #pay {
+  position: relative;
+  background: url("../../assets/icons/darkbg.svg");
+}
+body.dark #pay h1 {
+  position: relative;
+  z-index: 1;
+  color: var(--skin-color);
+}
+body.dark #pay .star_bg {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+body.dark #pay .pay__left, body.dark #pay .pay__right {
+  z-index: 1;
+}
+body.dark #pay .flip-card {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  body.dark footer .mobile-menu-left a, body.dark footer .mobile-menu-right a {
+    color: var(--skin-color) !important;
+  }
+  body.dark footer .location p {
+    color: #fff;
+  }
+  body.dark footer .mail p {
+    color: #fff;
+  }
+}
 
 a {
   text-decoration: none;
@@ -2342,4 +2419,141 @@ ul.breadcrumb li a:hover {
 .radio {
   background-color: red;
   color: red;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 240px;
+  height: 154px;
+  perspective: 1000px;
+}
+
+.heading_8264 {
+  position: absolute;
+  letter-spacing: 0.2em;
+  font-size: 0.5em;
+  top: 2em;
+  left: 18.6em;
+}
+
+.logo {
+  position: absolute;
+  top: 6.8em;
+  left: 11.7em;
+}
+
+.chip {
+  position: absolute;
+  top: 2.3em;
+  left: 1.5em;
+}
+
+.contactless {
+  position: absolute;
+  top: 3.5em;
+  left: 12.4em;
+}
+
+.number {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.6em;
+  top: 8.3em;
+  left: 1.6em;
+}
+
+.valid_thru {
+  position: absolute;
+  font-weight: bold;
+  top: 635.8em;
+  font-size: 0.01em;
+  left: 140.3em;
+}
+
+.date_8264 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.5em;
+  top: 13.6em;
+  left: 3.2em;
+}
+
+.name {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.5em;
+  top: 16.1em;
+  left: 2em;
+}
+
+.strip {
+  position: absolute;
+  background-color: black;
+  width: 15em;
+  height: 1.5em;
+  top: 2.4em;
+  background: repeating-linear-gradient(45deg, #303030, #303030 10px, #202020 10px, #202020 20px);
+}
+
+.mstrip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 8em;
+  height: 0.8em;
+  top: 5em;
+  left: 0.8em;
+  border-radius: 2.5px;
+}
+
+.sstrip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 4.1em;
+  height: 0.8em;
+  top: 5em;
+  left: 10em;
+  border-radius: 2.5px;
+}
+
+.code {
+  font-weight: bold;
+  text-align: center;
+  margin: 0.2em;
+  color: black;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+}
+
+.flip-card-back {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+  transform: rotateY(180deg);
 }
