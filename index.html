@@ -1,14 +1,1508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- owl carousel 2 link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Imperator | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
+    <script src="https://kit.fontawesome.com/2dd9a30273.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!-- --- NAVBAR-START --- -->
+    <div id="language">
+      <div class="container">
+        <div class="lang">
+          <a href="#">RU</a>
+          <a href="#">UZB</a>
+        </div>
+      </div>
+    </div>
+    <nav id="navbar">
+      <div class="container navbar__container">
+        <div class="nav-left">
+          <button class="hamburger" id="navbar-open">
+            <img
+              width="40px"
+              src="./assets/images/sotrudnichestvo/hamburger.svg"
+              alt="menu"
+            />
+          </button>
+          <a class="mobile-img" href="#">
+            <img width="41px" src="assets/images/home/logo-footer.svg" alt="" />
+          </a>
+          <a class="desktop-img" href="#">
+            <img src="assets/images/sotrudnichestvo/MILANDI.svg" alt="" />
+          </a>
+        </div>
+        <div class="nav-middle" id="navbar-responsive">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Категории</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Сотрудничество</a>
+            </li>
+            <button class="close" id="navbar-close">
+              <img
+                width="45px"
+                src="./assets/images/sotrudnichestvo/close.svg"
+                alt="close"
+              />
+            </button>
+            <div class="nav-btns">
+              <a href="#">Войти</a>
+              <a href="#">Зарегистрироваться</a>
+            </div>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="nav-right-btns">
+            <a href="#">Войти</a>
+            <a href="#">Зарегистрироваться</a>
+          </div>
+          <a href="#">
+            <img src="assets/images/home/korzinka-navbar.svg" alt="" />
+            <span class="quantity">0</span>
+          </a>
+        </div>
+      </div>
+      <div class="shopping_card">
+        <h1>Card</h1>
+        <ul>listCard</ul>
+        <div class="checkout">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+        </div>   
+      </div>
+    </nav>
+    <!-- --- NAVBAR-END --- -->
 
-</body>
+
+
+    <div class="header" id="header">
+      <div class="carousel-1 owl-carousel owl-theme header_carousel">
+        <div class="item">
+          <div class="container">
+            <div class="home_container">
+              <div class="header_title">
+                <h1>Быстрый и удобный шоппинг, не выходя из дома.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Convallis lectus odio vitae, duis nec ut velit, fermentum.
+                  Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                  elementum, fermentum amet quis erat.
+                </p>
+                <div class="header_btn">
+                  <svg
+                    width="6"
+                    height="8"
+                    viewBox="0 0 6 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 4L6.27408e-07 7.4641L9.30249e-07 0.535898L6 4Z"
+                      fill="#FFC000"
+                    />
+                  </svg>
+                  <a href="#" class="bce">Все товары</a>
+                </div>
+              </div>
+              <img
+                class="main_hero"
+                src="assets/images/home/home-main.png"
+                srcset="
+                  assets/images/home/home-main.png,
+                  assets/images/home/home-main@2x.png
+                "
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background: url('assets/images/home/bg2.jpg') center center
+              no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container">
+            <div class="home_container">
+              <div class="header_title t1">
+                <h1>Быстрый и удобный шоппинг, не выходя из дома.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Convallis lectus odio vitae, duis nec ut velit, fermentum.
+                  Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                  elementum, fermentum amet quis erat.
+                </p>
+                <div class="header_btn">
+                  <svg
+                    width="6"
+                    height="8"
+                    viewBox="0 0 6 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 4L6.27408e-07 7.4641L9.30249e-07 0.535898L6 4Z"
+                      fill="#FFC000"
+                    />
+                  </svg>
+                  <a href="#" class="bce">Все товары</a>
+                </div>
+              </div>
+              <!-- <img class="main_hero" src="assets/images/home/home-main.png" srcset="assets/images/home/home-main.png,  assets/images/home/home-main@2x.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background: linear-gradient(45deg, #00000062, #00000030),
+              url('assets/images/home/bg3.jpg') center center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container">
+            <div class="home_container">
+              <div class="header_title t2">
+                <h1>Быстрый и удобный шоппинг, не выходя из дома.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Convallis lectus odio vitae, duis nec ut velit, fermentum.
+                  Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                  elementum, fermentum amet quis erat.
+                </p>
+                <div class="header_btn">
+                  <svg
+                    width="6"
+                    height="8"
+                    viewBox="0 0 6 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 4L6.27408e-07 7.4641L9.30249e-07 0.535898L6 4Z"
+                      fill="#FFC000"
+                    />
+                  </svg>
+                  <a href="#" class="bce">Все товары</a>
+                </div>
+              </div>
+              <!-- <img class="main_hero" src="assets/images/home/home-main.png" srcset="assets/images/home/home-main.png,  assets/images/home/home-main@2x.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background: linear-gradient(45deg, #00000062, #00000030),
+              url('assets/images/home/bg4.jpg') center center no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container">
+            <div class="home_container">
+              <div class="header_title t3">
+                <h1>Быстрый и удобный шоппинг, не выходя из дома.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Convallis lectus odio vitae, duis nec ut velit, fermentum.
+                  Diam sollicitudin arcu euismod morbi. Adipiscing bibendum
+                  elementum, fermentum amet quis erat.
+                </p>
+                <div class="header_btn">
+                  <svg
+                    width="6"
+                    height="8"
+                    viewBox="0 0 6 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 4L6.27408e-07 7.4641L9.30249e-07 0.535898L6 4Z"
+                      fill="#FFC000"
+                    />
+                  </svg>
+                  <a href="#" class="bce">Все товары</a>
+                </div>
+              </div>
+              <!-- <img class="main_hero" src="assets/images/home/home-main.png" srcset="assets/images/home/home-main.png,  assets/images/home/home-main@2x.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECOND SECTION START -->
+    <section class="nashi" id="owl-one">
+      <div class="container carousel_container">
+        <div class="nashi_title">
+          <h1>Наши преимущества</h1>
+        </div>
+        <div class="carousel-2 owl-carousel owl-theme">
+          <div class="item">
+            <div class="nashi_container--card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_224_19)">
+                  <path
+                    d="M17.8 19.817L15.628 20.955C15.5635 20.9886 15.491 21.0035 15.4186 20.9983C15.3461 20.993 15.2765 20.9677 15.2176 20.9251C15.1587 20.8826 15.1127 20.8245 15.0849 20.7574C15.0571 20.6903 15.0485 20.6167 15.06 20.545L15.475 18.134L13.718 16.427C13.6656 16.3763 13.6284 16.3119 13.6108 16.2411C13.5933 16.1703 13.5959 16.096 13.6186 16.0267C13.6412 15.9573 13.6829 15.8957 13.7388 15.8489C13.7948 15.8021 13.8627 15.772 13.935 15.762L16.363 15.41L17.449 13.217C17.4815 13.1517 17.5315 13.0967 17.5935 13.0583C17.6556 13.0199 17.727 12.9995 17.8 12.9995C17.8729 12.9995 17.9444 13.0199 18.0064 13.0583C18.0685 13.0967 18.1185 13.1517 18.151 13.217L19.237 15.41L21.665 15.762C21.737 15.7724 21.8047 15.8027 21.8604 15.8495C21.9162 15.8964 21.9576 15.9579 21.9802 16.027C22.0028 16.0962 22.0056 16.1704 21.9882 16.241C21.9709 16.3117 21.9341 16.3761 21.882 16.427L20.125 18.134L20.539 20.544C20.5514 20.6159 20.5434 20.6898 20.516 20.7573C20.4885 20.8249 20.4426 20.8834 20.3836 20.9262C20.3245 20.969 20.2547 20.9944 20.1819 20.9995C20.1092 21.0046 20.0364 20.9892 19.972 20.955L17.8 19.817Z"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.1999 19.817L4.0279 20.955C3.96344 20.9886 3.89093 21.0035 3.81846 20.9983C3.74598 20.993 3.6764 20.9677 3.61749 20.9251C3.55857 20.8826 3.51263 20.8245 3.4848 20.7574C3.45697 20.6903 3.44835 20.6167 3.4599 20.545L3.8749 18.134L2.1179 16.427C2.06545 16.3763 2.02832 16.3119 2.01074 16.2411C1.99316 16.1703 1.99583 16.096 2.01846 16.0267C2.04109 15.9573 2.08276 15.8957 2.13871 15.8489C2.19466 15.8021 2.26264 15.772 2.3349 15.762L4.7629 15.41L5.8489 13.217C5.88137 13.1517 5.93143 13.0967 5.99344 13.0583C6.05545 13.0199 6.12695 12.9995 6.1999 12.9995C6.27284 12.9995 6.34434 13.0199 6.40635 13.0583C6.46836 13.0967 6.51842 13.1517 6.5509 13.217L7.6369 15.41L10.0649 15.762C10.1369 15.7724 10.2046 15.8027 10.2603 15.8495C10.3161 15.8964 10.3575 15.9579 10.3801 16.027C10.4027 16.0962 10.4055 16.1704 10.3881 16.241C10.3707 16.3117 10.334 16.3761 10.2819 16.427L8.52489 18.134L8.9389 20.544C8.95132 20.6159 8.94334 20.6898 8.91587 20.7573C8.8884 20.8249 8.84254 20.8834 8.78349 20.9262C8.72444 20.969 8.65456 20.9944 8.58181 20.9995C8.50905 21.0046 8.43633 20.9892 8.37189 20.955L6.1999 19.817Z"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9999 9.81701L9.82794 10.955C9.76349 10.9886 9.69098 11.0035 9.6185 10.9982C9.54603 10.993 9.47645 10.9677 9.41754 10.9251C9.35862 10.8826 9.31268 10.8245 9.28485 10.7574C9.25702 10.6903 9.2484 10.6167 9.25994 10.545L9.67494 8.13401L7.91795 6.42701C7.8655 6.37631 7.82837 6.31189 7.81079 6.2411C7.7932 6.1703 7.79588 6.096 7.81851 6.02665C7.84114 5.95731 7.8828 5.89572 7.93876 5.84893C7.99471 5.80213 8.06269 5.77201 8.13495 5.76201L10.5629 5.41001L11.6489 3.21701C11.6814 3.15169 11.7315 3.09673 11.7935 3.05831C11.8555 3.0199 11.927 2.99954 11.9999 2.99954C12.0729 2.99954 12.1444 3.0199 12.2064 3.05831C12.2684 3.09673 12.3185 3.15169 12.3509 3.21701L13.4369 5.41001L15.8649 5.76201C15.937 5.77237 16.0047 5.80268 16.0604 5.84952C16.1161 5.89636 16.1576 5.95786 16.1802 6.02705C16.2027 6.09624 16.2055 6.17037 16.1882 6.24105C16.1708 6.31173 16.134 6.37615 16.0819 6.42701L14.3249 8.13401L14.7389 10.544C14.7514 10.6159 14.7434 10.6898 14.7159 10.7573C14.6885 10.8249 14.6426 10.8834 14.5835 10.9262C14.5245 10.969 14.4546 10.9944 14.3819 10.9995C14.3091 11.0046 14.2364 10.9892 14.1719 10.955L11.9999 9.81701Z"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_224_19">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Лучший сервис</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="nashi_container--card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_224_13)">
+                  <path
+                    d="M7 19C8.10457 19 9 18.1046 9 17C9 15.8954 8.10457 15 7 15C5.89543 15 5 15.8954 5 17C5 18.1046 5.89543 19 7 19Z"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 19C18.1046 19 19 18.1046 19 17C19 15.8954 18.1046 15 17 15C15.8954 15 15 15.8954 15 17C15 18.1046 15.8954 19 17 19Z"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 17H3V13M2 5H13V17M9 17H15M19 17H21V11M21 11H13M21 11L18 6H13"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 9H7"
+                    stroke="#0D0D0D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_224_13">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Экспресс доставка</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="nashi_container--card card3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 8V16C5 16.2652 4.89464 16.5196 4.70711 16.7071C4.51957 16.8946 4.26522 17 4 17H2C1.73478 17 1.48043 16.8946 1.29289 16.7071C1.10536 16.5196 1 16.2652 1 16V9C1 8.73478 1.10536 8.48043 1.29289 8.29289C1.48043 8.10536 1.73478 8 2 8H5ZM5 8C6.06087 8 7.07828 7.57857 7.82843 6.82843C8.57857 6.07828 9 5.06087 9 4V3C9 2.46957 9.21071 1.96086 9.58579 1.58579C9.96086 1.21071 10.4696 1 11 1C11.5304 1 12.0391 1.21071 12.4142 1.58579C12.7893 1.96086 13 2.46957 13 3V8H16C16.5304 8 17.0391 8.21071 17.4142 8.58579C17.7893 8.96086 18 9.46957 18 10L17 15C16.8562 15.6135 16.5834 16.1402 16.2227 16.501C15.8619 16.8617 15.4328 17.0368 15 17H8C7.20435 17 6.44129 16.6839 5.87868 16.1213C5.31607 15.5587 5 14.7956 5 14"
+                  stroke="#0D0D0D"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p>Экспресс доставка</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <!-- SECOND SECTION END -->
+
+    <!-- THIRD SECTION START -->
+    <section class="tovar">
+      <div class="container">
+        <div class="tovar_title">
+          <h1>Лучшие товары</h1>
+        </div>
+        <div class="carousel-3 owl-carousel owl-theme">
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/qualty-man.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="count-display"
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    0
+                  </div>
+                  <button
+                  id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/man-2_2x-removebg-preview.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="count-display"
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    0
+                  </div>
+                  <button
+                  id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/man-4_2x-removebg-preview.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="count-display"
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    0
+                  </div>
+                  <button
+                  id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/man-3_2x-removebg-preview.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    <p id="count-display">0</p>
+                  </div>
+                  <button
+                    id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- THIRD SECTION END -->
+
+    <!-- FOURTH SECTION START -->
+    <section class="kategory">
+      <div class="container">
+         <div class="kategory_title">
+          <h1>Категории</h1>
+         </div>
+         <div class="carousel-4 owl-carousel owl-theme">
+          <div class="item">
+            <div class="kategory_card_container">
+              <div class="card_box" style="background: url('assets/images/home/kategori-1.png')center center no-repeat; background-size: cover;">
+                  <span></span>
+              </div>
+          </div>
+          
+         </div>
+          <div class="item">
+            <div class="kategory_card_container">
+              <div class="card_box" style="background: url('assets/images/home/kategori-2.png') center center no-repeat; background-size: cover;">
+                  <span></span> 
+              </div>
+          </div>
+          
+         </div>
+          <div class="item">
+            <div class="kategory_card_container">
+              <div class="card_box" style="background: url('assets/images/home/kategori-3.png')center center no-repeat; background-size: cover;">
+                  <span></span>
+              </div>
+          </div>
+          
+         </div>
+          <div class="item">
+            <div class="kategory_card_container">
+              <div class="card_box" style="background: url('assets/images/home/kategori-2.png')center center no-repeat; background-size: cover;">
+                  <span></span>
+              </div>
+          </div>
+          
+         </div>
+          <div class="item">
+            <div class="kategory_card_container">
+              <div class="card_box" style="background: url('assets/images/home/kategori-1.png')center center no-repeat; background-size: cover;">
+                  <span></span>
+              </div>
+          </div>
+          
+         </div>
+      </div>
+    </section>
+    <!-- FOURTH SECTION END -->
+
+    <!-- FIFTH SECTION START -->
+    <section class="skachay">
+      <div class="container">
+        <div class="skachay_container">
+          <img class="tel" src="assets/images/home/iPhone-12-Pro-mockup-1.png" srcset="assets/images/home/iPhone-12-Pro-mockup-1.png 1x, assets/images/home/iPhone-12-Pro-mockup-1@2x.png 2x" alt="">
+          <div class="skachay_container_right">
+            <h1>Скачай приложение и получай призы каждый день</h1>
+            <p>Скачав наш приложение вы получаете возможность играть в призовые игры каждый день и выигровать разного рода подарки для себя.
+              В нашем приложении призовые игры проходят аблолютно каждый день и всё это совершенно бесплатно.</p>
+              <div class="skachay_right--social">
+                <a href="#" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                  <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
+                  <div class="text-left">
+                      <div class="mb-1 text-xs">Download on the</div>
+                      <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
+                  </div>
+              </a>
+              <a href="#" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
+                <div class="text-left">
+                    <div class="mb-1 text-xs">Get in on</div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+                </div>
+            </a>
+                <!-- <a href="#"><img src="assets/images/home/app-store.png" srcset="assets/images/home/app-store.png 1x, assets/images/home/app-store@2x.png 2x" alt=""></a> -->
+                <!-- <a href="#"><img src="assets/images/home/google-play.png" srcset="assets/images/home/google-play.png 1x, assets/images/home/google-play@2x.png 2x" alt=""></a> -->
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIFTH SECTION END -->
+    
+     <!-- THIRD SECTION START -->
+     <section class="tovar pb">
+      <div class="container">
+        <div class="tovar_title">
+          <h1>Новые товары</h1>
+        </div>
+        <div class="carousel-3 owl-carousel owl-theme">
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/qualty-man.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="count-display"
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    0
+                  </div>
+                  <button
+                  id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/man-2_2x-removebg-preview.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="count-display"
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    0
+                  </div>
+                  <button
+                  id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/man-4_2x-removebg-preview.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="count-display"
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    0
+                  </div>
+                  <button
+                  id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class=" h2 w-80 bg-white shadow rounded">
+              <div
+                class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
+               style="background-color: #dfdede;"
+              >
+              <img class="iplos" src="assets/images/home/man-3_2x-removebg-preview.png"  alt="">
+                <div class="flex justify-between">
+                  <input type="checkbox" />
+                  <button class="text-white hover:text-blue-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none"
+                  >
+                    available
+                  </span>
+                </div>
+              </div>
+              <div class="p-4 flex flex-col items-start">
+                <p class=" tovar_card_title text-left">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
+                <p class="text-left text-gray-800 mt-1">855 у.е.</p>
+                <div class="inline-flex items-center mt-2">
+                  <button
+                    id="decrement-btn"
+                    class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 12H4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    
+                    class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
+                  >
+                    <p id="count-display">0</p>
+                  </div>
+                  <button
+                    id="increment-btn"
+                    class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="price">
+                  <div class="stars">
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                  </div>
+                  <div class="price_info">855 у.е.</div>
+                </div>
+                
+                <button
+                
+                class="py-2 px-4 bg-yellow-400 text-black rounded hover:bg-yellow-500  active:bg-yellow-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center
+                  stylee "
+                  
+                >
+                Добавить в корзину
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- THIRD SECTION END -->
+
+    <!-- SIXTH SECTION START -->
+    <section class="sozday">
+      <div class="sozday_container">
+        <img class="bg_img" src="assets/images/home/krossovka-shim.png" style="width: 47%;" height="47%" alt="">
+        <div class="sozday_container-right">
+          <h1>Создай свой лук на все случаи жизни в “Imperia”</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam sollicitudin a cursus in. Vel sit donec semper magna dignissim. Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel egestas fermentum pellentesque sed vitae vel.</p>
+          <button type="button" class="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">начать покупки</button>
+        </div>
+      </div>
+    </section>
+    <!-- SIXTH SECTION END -->
+    
+
+
+
+
+    <!-- j 1 quary -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- owl carousel min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

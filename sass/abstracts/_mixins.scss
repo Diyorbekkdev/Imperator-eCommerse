@@ -22,22 +22,22 @@ $rem-base: 16px;
   );
 
   $line-heights: (
-    h1: 140px,
-    h2: 140px,
-    h3: 140px,
-    h4: 140px,
-    h5: 140px,
-    body-big: 140px,
-    body-1: 140px,
-    subtitle-2: 140px,
-    body-2: 160px,
-    caption: 140px,
-    overline: 140px,
+    h1: 140%,
+    h2: 140%,
+    h3: 140%,
+    h4: 140%,
+    h5: 140%,
+    body-big: 140%,
+    body-1: 140%,
+    subtitle-2: 160%,
+    body-2: 160%,
+    caption: 140%,
+    overline: 140%,
   );
-
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: calculateRem(map-get($font-sizes, $heading));
-  line-height: calculateRem(map-get($line-heights, $heading));
+  // line-height: calculateRem(map-get($line-heights, $heading));
   letter-spacing: -0.01em;
   color: #000;
 }
@@ -91,3 +91,17 @@ $rem-base: 16px;
 // .box{
 //   @include box-shadow(1);
 // }
+
+@mixin media($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+
+@mixin first-mobile ($px) {
+  @media (min-width: $px) {
+    @content;
+  }
+}
+
