@@ -458,8 +458,8 @@ body.dark{
     @include media(500px){
       .mobile-menu-left, .mobile-menu-right{
         a{
-        color: var(--skin-color) !important;
-
+          color: var(--skin-color) !important;
+          
         }
       }
       .location{
@@ -476,3 +476,92 @@ body.dark{
   }
 }
 
+
+body.dark{
+  .sec1-right{
+    h4{
+      color: var(--skin-color);
+    }
+    h6{
+      color: #fff;
+    }
+    p{
+      color: #fff;
+    }
+    a{
+      color: #fff;
+    }
+  }
+  .big-btns{
+    .pokupki{
+      background: #fff !important;
+    }
+  }
+  .preymush{
+    h5{
+      color: #fff  !important;
+    }
+    .item{
+      img{
+        filter: invert(1);
+      }
+      p{
+        color: #fff !important;
+      }
+    }
+  }
+  #n2{
+    .tovar_card_title{
+      color: var(--skin-color) !important;
+    }
+    .items-start{
+      background: #414450;
+    }
+  }
+  
+  #section3{
+    background: url("../../assets/icons/darkbg.svg");
+    h4{
+      color: var(--skin-color);
+    }
+  }
+}
+
+
+body.dark{
+  #section-1{
+    background: url("../../assets/icons/darkbg.svg");
+    h4, h5{
+      color: var(--skin-color);
+      }
+      p{
+        color: #fff;
+      }
+    }
+    #section-2{
+    background: url("../../assets/icons/darkbg.svg");
+    h4{
+      color:var(--skin-color);
+    }
+    .sec2-carousel, .carousel-card{
+       background: url(". ./../assets/icons/darkbg.svg");
+       img{
+         filter: invert(1);
+        }
+        p{
+          color: #fff;
+        }
+     }
+    }
+    #section-4{
+      background: url(". ./../assets/icons/darkbg.svg");
+      .top-title, .cities{
+        h1,h3{
+          color: var(--skin-color) !important;
+        }
+        p{
+          color: #fff;
+        }
+      }
+    }
+}
