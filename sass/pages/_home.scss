@@ -1,28 +1,11 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-
-
-
-
-
-
-
-.quantity{
-  position: absolute;
-  top: 19px;
-  right: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: #f60713;
-  color: #ffffff;
-  width: 20px;
-  height: 20px;
+body {
+  background: #f2f3f7;
 }
 
-.shopping_card{
+.shopping_card {
   position: relative;
   position: fixed;
   top: 75px;
@@ -31,7 +14,7 @@
   background: #382306;
   height: 100vh;
   transition: 0.5s;
-  h1{
+  h1 {
     color: #fff;
     font-family: "Montserrat";
     font-style: normal;
@@ -39,34 +22,32 @@
     font-size: 34px;
     line-height: 140%;
   }
-  .checkout{
+  .checkout {
     position: absolute;
     bottom: 70px;
     width: 100%;
     display: flex;
-    div{
+    div {
       background-color: #fcbc0c;
       width: 100%;
-      height: 70px; 
+      height: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
       font-weight: bold;
       cursor: pointer;
     }
-    div:nth-child(2){
+    div:nth-child(2) {
       background: #1c1f25;
       color: #fff;
     }
-    
   }
 }
 
-.active .card{
+.active .card {
   left: calc(100% - 500px);
   transform: translateX(-200px);
 }
-
 
 .header {
   &_carousel {
@@ -610,15 +591,34 @@
 }
 
 .sozday {
+  background: #fff;
   &_container {
     display: flex;
     align-items: center;
-    .bg_img{
-      @include media(992px){
+    .bg_img {
+      @include media(992px) {
         display: none;
       }
     }
     &-right {
+      .sozday_img {
+        display: none;
+        @include media(426px) {
+          display: block;
+          width: 100%;
+          padding-right: 20px;
+        }
+      }
+      .nachat {
+        margin-bottom: 25px;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        @include media(426px) {
+          width: 90% !important;
+        }
+      }
       max-width: 558px;
       margin-left: 32px;
       h1 {
@@ -639,4 +639,32 @@
       }
     }
   }
+}
+
+.skidka {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  text-align: center;
+  background: #ffc000;
+  h1 {
+    padding-top: 173px;
+    padding-bottom: 173px;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.15rem;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.25px;
+    span {
+      font-size: 4rem;
+    }
+  }
+}
+
+.footer_home {
+  background: #fff;
 }

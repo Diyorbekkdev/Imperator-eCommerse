@@ -22,6 +22,15 @@
     <title>Imperator | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/2dd9a30273.js" crossorigin="anonymous"></script>
+    <!-- skin colors links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--====Style switcher===-->
+    <link rel="stylesheet" href="css/skin/color-1.css">
+    <link rel="stylesheet" href="css/skin/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skin/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skin/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skin/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skin/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
@@ -48,7 +57,7 @@
             <img width="41px" src="assets/images/home/logo-footer.svg" alt="" />
           </a>
           <a class="desktop-img" href="#">
-            <img src="assets/images/sotrudnichestvo/MILANDI.svg" alt="" />
+            <img class="milandi" src="assets/images/sotrudnichestvo/MILANDI.svg" alt="" />
           </a>
         </div>
         <div class="nav-middle" id="navbar-responsive">
@@ -77,9 +86,8 @@
             <a href="#">Войти</a>
             <a href="#">Зарегистрироваться</a>
           </div>
-          <a href="#">
+          <a href="#" class="shop_abs">
             <img src="assets/images/home/korzinka-navbar.svg" alt="" />
-            <span class="quantity">0</span>
           </a>
         </div>
       </div>
@@ -256,6 +264,8 @@
 
     <!-- SECOND SECTION START -->
     <section class="nashi" id="owl-one">
+      <img class="lightt" src="assets/icons/light.svg
+      " alt="">
       <div class="container carousel_container">
         <div class="nashi_title">
           <h1>Наши преимущества</h1>
@@ -381,14 +391,14 @@
     <section class="tovar">
       <div class="container">
         <div class="tovar_title">
-          <h1>Лучшие товары</h1>
+          <h1 class="t_h1">Лучшие товары</h1>
         </div>
         <div class="carousel-3 owl-carousel owl-theme">
           <div class="item">
             <div class=" h2 w-80 bg-white shadow rounded">
               <div
                 class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-               style="background-color: #dfdede;"
+               
               >
               <img class="iplos" src="assets/images/home/qualty-man.png"  alt="">
                 <div class="flex justify-between">
@@ -418,8 +428,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class=" lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -541,8 +551,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class=" lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -636,7 +646,7 @@
                 class="h w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
                style="background-color: #dfdede;"
               >
-              <img class="iplos" src="assets/images/home/man-4_2x-removebg-preview.png"  alt="">
+              <img class="" src="assets/images/home/man-4_2x-removebg-preview.png"  alt="">
                 <div class="flex justify-between">
                   <input type="checkbox" />
                   <button class="text-white hover:text-blue-500">
@@ -664,8 +674,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class=" lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -787,8 +797,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class=" lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -886,7 +896,7 @@
     <section class="kategory">
       <div class="container">
          <div class="kategory_title">
-          <h1>Категории</h1>
+          <h1 class="kateg">Категории</h1>
          </div>
          <div class="carousel-4 owl-carousel owl-theme">
           <div class="item">
@@ -1007,8 +1017,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class="lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -1130,8 +1140,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class="lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -1253,8 +1263,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class="lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -1376,8 +1386,8 @@
                   </span>
                 </div>
               </div>
-              <div class="p-4 flex flex-col items-start">
-                <p class=" tovar_card_title text-left">
+              <div class=" bg_card p-4 flex flex-col items-start">
+                <p class="lorem_p tovar_card_title text-left">
                   Lorem ipsum dolor sit amet
                 </p>
                 <h1 class="text-gray-800 text-left mt-1" style=" font-family: 'Montserrat';;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</h1>
@@ -1472,20 +1482,137 @@
     <!-- THIRD SECTION END -->
 
     <!-- SIXTH SECTION START -->
+    <img class="lighttt" src="assets/icons/light.svg" alt="">
     <section class="sozday">
       <div class="sozday_container">
         <img class="bg_img" src="assets/images/home/krossovka-shim.png" style="width: 47%;" height="47%" alt="">
         <div class="sozday_container-right">
+          <img class="sozday_img" src="assets/images/home/krossovka-shim.png" alt="">
           <h1>Создай свой лук на все случаи жизни в “Imperia”</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam sollicitudin a cursus in. Vel sit donec semper magna dignissim. Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel egestas fermentum pellentesque sed vitae vel.</p>
-          <button type="button" class="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">начать покупки</button>
+          <button type="button" class=" nachat focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">начать покупки</button>
         </div>
       </div>
     </section>
     <!-- SIXTH SECTION END -->
     
 
+    <!-- LAST SECTION START -->
+    <section class="skidka">
+      <div class="container">
+        <div class="skidka_title">
+          <h1>Скидка <span class="skidka_price">30%</span> на первую покупку обслютно для всех</h1>
+        </div>
+      </div>
+    </section>
+    <!-- LAST SECTION END -->
 
+
+     <!-- --- FOOTER-START --- -->
+     <footer class="footer_home">
+      <div class="container footer__container">
+        <div class="footer-desktop">
+          <div class="footer-desktop-left">
+            <div class="proimperia">
+              <h4>про imperia</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+                pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+              </p>
+              <a href="#">
+                <img src="./assets/images/home/logo-footer.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer-left-menu">
+              <div class="contact">
+                <h4>контакты</h4>
+                <a href="tel: +998 90 958 78 87">+998 90 958 78 87</a>
+                <a href="mailto: support@fonon.uz">support@fonon.uz</a>
+              </div>
+              <div class="work-time">
+                <h4>рабочее время</h4>
+                <p>По будням 9:00 to 18:00</p>
+                <p>В выходные 11:00 to 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-desktop-right">
+            <div class="footer-menu">
+              <h4>Меню</h4>
+              <a href="#">Главная</a>
+              <a href="#">О нас</a>
+              <a href="#">Категории</a>
+              <a href="#">Сотрудничество</a>
+            </div>
+            <div class="category">
+              <h4>категории</h4>
+              <a href="#">Женская одежда</a>
+              <a href="#">Мужская одежда</a>
+              <a href="#">Детская одежда</a>
+              <a href="#">Обувь</a>
+              <a href="#">Сумки</a>
+              <a href="#">Аксесуары</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mobile">
+          <p>
+            High fidelity wireframes include more real content, specific
+            typography choices, and information on image.
+          </p>
+          <div class="footer-mobile-menu">
+            <div class="mobile-menu-left">
+              <a href="#">Catalog</a>
+              <a href="#">Popular</a>
+              <a href="#">Pricing</a>
+              <a href="#">Features</a>
+            </div>
+            <div class="mobile-menu-right">
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+          <div class="footer-mobile-bottom">
+            <div class="location">
+              <a href="#">
+                <img src="assets/images/sotrudnichestvo/locationn.svg" alt="" />
+              </a>
+              <p>Los Angeles, 359 Hidden Valley Road</p>
+            </div>
+            <div class="mail">
+              <a href="#">
+                <img src="assets/images/sotrudnichestvo/email.svg" alt="">
+              </a>
+              <p>Hellohero@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --- FOOTER-END --- -->
+
+
+    <!-- DARK MODE SWITCHER STYLES -->
+     <!--===Style Switcher Start===-->
+ <div class="style-switcher">
+  <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+  </div>
+  <div class="day-night s-icon">
+      <i class="fas fa"></i>
+  </div>
+  <h4>Theme Colors</h4>
+  <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+  </div>
+</div>
+<!--===Style Switcher Start===-->
+     <!-- DARK MODE SWITCHER STYLES -->
 
 
     <!-- j 1 quary -->
@@ -1504,5 +1631,6 @@
     ></script>
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
