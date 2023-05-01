@@ -361,11 +361,23 @@ body.dark{
       color: var(--skin-color) !important;
     }
     label{
-    color: var(--skin-color) !important;
+      color: var(--skin-color) !important;
     }
     .desk_light{
       display: block;
       position: absolute;
     }
+  }
+}
+
+
+
+body.dark{
+  #category{
+    background: url("../../assets/icons/darkbg.svg");
+    h1{
+      color: var(--skin-color);
+    }
+
   }
 }

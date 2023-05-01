@@ -1,3 +1,19 @@
+
+const stars = document.querySelectorAll(".stars i");
+const starsNone = document.querySelector(".rating-box");
+
+// ---- ---- Stars ---- ---- //
+stars.forEach((star, index1) => {
+  star.addEventListener("click", () => {
+    stars.forEach((star, index2) => {
+      // ---- ---- Active Star ---- ---- //
+      index1 >= index2
+        ? star.classList.add("active")
+        : star.classList.remove("active");
+    });
+  });
+});
+
 function openNavbar() {
   document.getElementById("navbar-responsive").style.left = "0";
   // document.getElementById("navbar-responsive").style.top = "0";
@@ -96,15 +112,3 @@ function initApp(){
   })
 }
 initApp();
-
-
-
-const togglePassword = document.querySelector("#togglePassword");
-const password = document.querySelector("#password");
-
-togglePassword.addEventListener("click", function () {
-  const type =
-    password.getAttribute("type") === "password" ? "text" : "password";
-  password.setAttribute("type", type);
-  this.classList.toggle("bi-eye");
-});

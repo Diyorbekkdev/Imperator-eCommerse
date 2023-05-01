@@ -349,6 +349,13 @@ body.dark #profil .desk_light {
   position: absolute;
 }
 
+body.dark #category {
+  background: url("../../assets/icons/darkbg.svg");
+}
+body.dark #category h1 {
+  color: var(--skin-color);
+}
+
 a {
   text-decoration: none;
 }
@@ -591,6 +598,68 @@ nav .navbar__container .nav-right a:hover img {
     display: block;
     padding: 10px;
   }
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#inputField {
+  width: 82%;
+  border: 2px solid transparent;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 12px 15px;
+  color: black;
+  font-weight: 500;
+  outline: none;
+  caret-color: rgb(37, 137, 255);
+  transition-duration: 0.3s;
+  font-family: "Montserrat";
+}
+
+.userIcon {
+  position: absolute;
+  fill: rgb(37, 137, 255);
+  width: 12px;
+  top: -23px;
+  left: -15px;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.usernameLabel {
+  position: absolute;
+  top: -25px;
+  left: 5px;
+  color: rgb(37, 137, 255);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  overflow: hidden;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+#inputField:focus ~ .usernameLabel,
+#inputField:valid ~ .usernameLabel {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus ~ .userIcon,
+#inputField:valid ~ .userIcon {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus,
+#inputField:valid {
+  background-color: #ddd;
+  transition-duration: 0.3s;
 }
 
 footer {
@@ -2110,4 +2179,167 @@ body {
     padding: 13px !important;
     width: 100%;
   }
+}
+
+#category {
+  background-color: #e5e5e5;
+  font-family: "Montserrat";
+}
+
+.category__item img {
+  width: 100%;
+}
+
+#pay {
+  font-family: "Montserrat";
+  background: #e5e5e5;
+}
+#pay .pay_title h1 {
+  text-align: center;
+}
+#pay .pay_item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+#pay .pay_item .pay__right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#pay .pay_item .pay__right .pay_btn {
+  width: 82%;
+  padding: 20px 0;
+  transition: 0.3;
+  background-color: yellow;
+  transition: 0.3s ease-in;
+}
+#pay .pay_item .pay__right .pay_btn:hover {
+  background-color: rgb(67, 137, 255);
+  transition: 0.3s ease-in-out;
+}
+
+#filter {
+  background: #e5e5e5;
+  font-family: "Montserrat";
+}
+
+ul.breadcrumb {
+  padding: 40px 0px 32px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 0px 5px;
+  color: #000000;
+  font-weight: 500;
+  content: "/ ";
+}
+
+ul.breadcrumb li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+@media (max-width: 896px) {
+  .pay_item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-column-gap: 0px !important;
+  }
+  .pay__left img {
+    display: none;
+  }
+  #inputField {
+    width: 100%;
+  }
+  .pay_btn {
+    width: 100% !important;
+  }
+}
+.filters {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-bottom: 64px;
+}
+
+.star_second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.star_price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.1px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.star_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.card__row__custom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px 47px;
+}
+
+.titles {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.ap-tab-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.radio {
+  background-color: red;
+  color: red;
 }
