@@ -244,14 +244,14 @@ body.dark .sozday h1 {
 body.dark .sozday p {
   color: #fff;
 }
-body.dark .footer_home {
+body.dark footer {
   background: url("../../assets/icons/darkbg.svg");
 }
-body.dark .footer_home h4 {
+body.dark footer h4 {
   color: var(--skin-color);
 }
-body.dark .footer_home p,
-body.dark .footer_home a {
+body.dark footer p,
+body.dark footer a {
   color: #fff;
 }
 body.dark .lighttt {
@@ -266,6 +266,87 @@ body.dark .skidka {
 }
 body.dark .skidka span {
   color: var(--skin-color);
+}
+
+body.dark #desktop-1 {
+  background: url("../../assets/icons/darkbg.svg") !important;
+}
+body.dark #desktop-1 .desktop-left {
+  padding: 30px 15px;
+  background: rgba(255, 255, 255, 0.109);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+body.dark #desktop-1 h1 {
+  color: var(--skin-color) !important;
+}
+body.dark #desktop-1 p {
+  color: #fff !important;
+}
+body.dark #desktop-1 a {
+  background: #1854b4 !important;
+  transition: 0.3s ease-out;
+}
+body.dark #desktop-1 a:hover {
+  transition: 0.3s ease-out;
+  background: #206be2 !important;
+}
+
+.desk_light {
+  display: none;
+}
+
+body.dark #desktop-2, body.dark #desktop-3 {
+  background: url("../../assets/icons/darkbg.svg");
+}
+body.dark #desktop-2 h1, body.dark #desktop-3 h1 {
+  color: var(--skin-color) !important;
+}
+body.dark #desktop-2 .desk_light, body.dark #desktop-3 .desk_light {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  transform: translateX(-255px);
+}
+body.dark #desktop-2 .desktop-left, body.dark #desktop-3 .desktop-left {
+  z-index: 1;
+}
+body.dark #desktop-2 label, body.dark #desktop-3 label {
+  color: #fff !important;
+}
+body.dark #desktop-2 input, body.dark #desktop-3 input {
+  background: rgba(160, 215, 255, 0.3921568627);
+  border: 1px solid #0265f8 !important;
+}
+body.dark #desktop-2 .desktop-right, body.dark #desktop-3 .desktop-right {
+  border-radius: 12px;
+  padding: 30px 15px;
+  background: url("../../assets/icons/bgfooter.svg") center center no-repeat;
+  background-size: cover;
+}
+
+body.dark #profil {
+  background: url("../../assets/icons/darkbg.svg");
+}
+body.dark #profil input {
+  background: rgba(162, 195, 245, 0.2352941176);
+  color: var(--skin-color) !important;
+}
+body.dark #profil input::-moz-placeholder {
+  color: var(--skin-color) !important;
+}
+body.dark #profil input::placeholder {
+  color: var(--skin-color) !important;
+}
+body.dark #profil label {
+  color: var(--skin-color) !important;
+}
+body.dark #profil .desk_light {
+  display: block;
+  position: absolute;
 }
 
 a {
@@ -308,10 +389,12 @@ li {
 nav {
   position: sticky;
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
+  height: 75px;
   background: #fafafa;
   box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
-  height: 75px;
   transition: 0.5s;
 }
 @media (max-width: 500px) {
@@ -319,10 +402,6 @@ nav {
     height: 72px;
     background-color: #fff;
   }
-}
-nav .navbar-shrink {
-  top: 0;
-  height: 65px;
 }
 nav .navbar__container {
   display: flex;
@@ -448,7 +527,7 @@ nav .navbar__container .nav-right a:hover img {
 @media (max-width: 1000px) {
   nav .navbar__container .nav-middle {
     position: fixed;
-    left: 0;
+    left: -100%;
     top: 0;
     width: 40vw;
     height: 100vh;
@@ -619,7 +698,7 @@ footer .footer-mobile {
 
 @media (max-width: 500px) {
   footer {
-    padding: 0px;
+    padding: 30px 0;
   }
   footer .footer-desktop {
     display: none !important;
@@ -1316,4 +1395,719 @@ body {
 
 .footer_home {
   background: #fff;
+}
+
+#application {
+  padding: 200px 0 90px !important;
+  background-color: #f4f4f4;
+}
+#application .application__container {
+  display: flex;
+  gap: 40px;
+}
+#application .application__container .app-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 72px;
+}
+#application .application__container .app-left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -0.01em;
+  color: #000;
+  font-family: "Montserrat";
+  font-weight: 900 !important;
+  max-width: 528px;
+  font-weight: 900;
+  line-height: 64px;
+  color: #000000;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+#application .application__container .app-left .phone-address {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+#application .application__container .app-left .phone-address h3 {
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  color: #000;
+  font-family: "Inter";
+  font-weight: 700;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-left .phone-address a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-left .phone-address .email {
+  display: none;
+}
+#application .application__container .app-right {
+  width: 50%;
+}
+#application .application__container .app-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#application .application__container .app-right form input {
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-right form input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-right form input::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-right form input:focus {
+  outline: 1px solid rgb(135, 135, 135);
+}
+#application .application__container .app-right form textarea {
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-right form textarea::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-right form textarea::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#application .application__container .app-right form textarea:focus {
+  outline: 1px solid rgb(135, 135, 135);
+}
+#application .application__container .app-right form button {
+  cursor: pointer;
+  background: #ffc000;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 0px;
+  width: 260px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+}
+#application .application__container .app-right form button:hover {
+  background-color: #e5ac00;
+}
+@media (max-width: 900px) {
+  #application .application__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #application .application__container .app-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  #application .application__container .app-left h1 {
+    max-width: 100%;
+  }
+  #application .application__container .app-left .phone-address {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #application .application__container .app-right {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  #application {
+    padding: 50px 0 !important;
+  }
+  #application .application__container .app-left {
+    gap: 35px;
+  }
+  #application .application__container .app-left h1 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  #application .application__container .app-left .phone-address {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: left;
+  }
+  #application .application__container .app-left .phone-address h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  #application .application__container .app-left .phone-address a {
+    font-size: 16px;
+  }
+  #application .application__container .app-left .phone-address .email {
+    display: block;
+  }
+  #application .application__container .app-right form button {
+    width: 100%;
+  }
+}
+
+#profil {
+  padding: 80px 0 80px;
+  background-color: #f4f4f4;
+}
+#profil .profil__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+}
+#profil .profil__container .profil-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#profil .profil__container .profil-left a {
+  background: #ffc000;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+  cursor: pointer;
+}
+#profil .profil__container .profil-left a:hover {
+  background-color: #e5ac00;
+}
+#profil .profil__container .profil-right form {
+  display: flex;
+  gap: 130px;
+}
+#profil .profil__container .profil-right form label {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+#profil .profil__container .profil-right form input {
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  padding: 8px 82px 8px 12px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#profil .profil__container .profil-right form input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#profil .profil__container .profil-right form input::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#profil .profil__container .profil-right form input:focus {
+  outline: 1px solid rgb(135, 135, 135);
+}
+#profil .profil__container .profil-right form .form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#profil .profil__container .profil-right form .form-left .password {
+  display: flex;
+  flex-direction: column;
+}
+#profil .profil__container .profil-right form .form-left .password a {
+  margin-top: -8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffc000;
+}
+#profil .profil__container .profil-right form .form-left .password a:hover {
+  color: #e9af00;
+}
+#profil .profil__container .profil-right form .form-left .password i {
+  position: relative;
+  right: -260px;
+  top: -33px;
+}
+#profil .profil__container .profil-right form .address input {
+  width: 313px;
+  padding: 8px 12px;
+}
+@media (max-width: 1200px) {
+  #profil .profil__container .profil-right form {
+    gap: 50px;
+  }
+}
+@media (max-width: 1120px) {
+  #profil .profil__container {
+    gap: 50px;
+  }
+}
+@media (max-width: 1040px) {
+  #profil .profil__container {
+    flex-direction: column;
+  }
+  #profil .profil__container .profil-left {
+    align-items: center;
+  }
+  #profil .profil__container .profil-left a {
+    padding: 10px 87px;
+  }
+  #profil .profil__container .profil-right form {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #profil .profil__container .profil-right form .form-left {
+    width: 100%;
+    align-items: center;
+  }
+  #profil .profil__container .profil-right form .form-left div {
+    width: 100%;
+  }
+  #profil .profil__container .profil-right form .form-left div input {
+    width: 94%;
+    padding: 10px 12px;
+  }
+  #profil .profil__container .profil-right form .form-left .password {
+    position: relative;
+  }
+  #profil .profil__container .profil-right form .form-left .password a {
+    margin-top: 8px;
+  }
+  #profil .profil__container .profil-right form .form-left .password i {
+    display: none;
+  }
+  #profil .profil__container .profil-right form .address {
+    width: 100%;
+  }
+  #profil .profil__container .profil-right form .address input {
+    padding: 10px 12px;
+    width: 94%;
+  }
+}
+@media (max-width: 440px) {
+  #profil .profil-left .profil-img {
+    width: 100%;
+  }
+  #profil .profil-left .profil-img img {
+    width: 100%;
+  }
+  #profil .profil-left a {
+    padding: 10px 0 !important;
+    width: 100%;
+  }
+}
+
+#desktop-1 {
+  padding: 55px 0;
+  background-color: #f4f4f4;
+}
+#desktop-1 .desktop1__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#desktop-1 .desktop1__container .desktop-left h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 64px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-1 .desktop1__container .desktop-left p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.1px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+#desktop-1 .desktop1__container .desktop-left a {
+  background: #ffc000;
+  width: 262px !important;
+  border-radius: 6px;
+  text-align: center;
+  padding: 13px 20px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+  cursor: pointer;
+}
+#desktop-1 .desktop1__container .desktop-left a:hover {
+  background-color: #e5ac00;
+}
+@media (max-width: 900px) {
+  #desktop-1 .desktop1__container {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  #desktop-1 .desktop1__container .desktop-left {
+    text-align: center;
+  }
+}
+@media (max-width: 545px) {
+  #desktop-1 .desktop1__container .desktop-right {
+    width: 100%;
+  }
+  #desktop-1 .desktop1__container .desktop-right img {
+    width: 100%;
+  }
+  #desktop-1 .desktop1__container .desktop-left {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  #desktop-1 .desktop1__container .desktop-left h1 {
+    font-size: 34px;
+    line-height: 140%;
+  }
+  #desktop-1 .desktop1__container .desktop-left a {
+    width: 90% !important;
+  }
+}
+
+#desktop-2 {
+  padding: 56px 0 64px;
+  background-color: #e5e5e5;
+}
+#desktop-2 .desktop2__container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#desktop-2 .desktop2__container .desktop-title h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-2 .desktop2__container .desktop-main {
+  max-width: 1267px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form label {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form input {
+  border: 1px solid #a7a7a7;
+  border-radius: 6px;
+  padding: 8px 347px 8px 12px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form input::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form input:focus {
+  outline: 1px solid rgb(135, 135, 135);
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form button {
+  background: #ffc000;
+  border-radius: 6px;
+  text-align: center;
+  border: none;
+  padding: 13px 104px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+  cursor: pointer;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form button:hover {
+  background-color: #e5ac00;
+}
+#desktop-2 .desktop2__container .desktop-main .desktop-right form .password i {
+  position: relative;
+  left: 505px;
+  bottom: 33px;
+}
+@media (max-width: 1300px) {
+  #desktop-2 .desktop2__container .desktop-main {
+    flex-direction: column;
+  }
+  #desktop-2 .desktop2__container .desktop-main .password i {
+    display: none;
+  }
+  #desktop-2 .desktop2__container .desktop-main button {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  #desktop-2 .desktop2__container {
+    padding: 0 20px;
+  }
+  #desktop-2 .desktop2__container .desktop-main .desktop-left {
+    width: 100% !important;
+  }
+  #desktop-2 .desktop2__container .desktop-main .desktop-left img {
+    width: 100% !important;
+  }
+  #desktop-2 .desktop2__container .desktop-main .desktop-right {
+    width: 100%;
+  }
+  #desktop-2 .desktop2__container .desktop-main .desktop-right form {
+    width: 100%;
+  }
+  #desktop-2 .desktop2__container .desktop-main .desktop-right form input {
+    width: 94%;
+    padding: 8px 14px;
+  }
+  #desktop-2 .desktop2__container .desktop-main .desktop-right form .password {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  #desktop-2 .desktop2__container .desktop-main .desktop-right form button {
+    padding: 13px 12px;
+    width: 100%;
+  }
+}
+
+#desktop-3 {
+  padding: 56px 0 64px;
+  background-color: #e5e5e5;
+}
+#desktop-3 .desktop3__container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#desktop-3 .desktop3__container .desktop-title h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-3 .desktop3__container .desktop-main {
+  max-width: 1267px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form label {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  cursor: pointer;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form input {
+  border: 1px solid #a7a7a7;
+  border-radius: 6px;
+  padding: 8px 347px 8px 12px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form input::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form input:focus {
+  outline: 1px solid rgb(135, 135, 135);
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form button {
+  background: #ffc000;
+  border-radius: 6px;
+  text-align: center;
+  border: none;
+  padding: 13px 104px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+  cursor: pointer;
+}
+#desktop-3 .desktop3__container .desktop-main .desktop-right form button:hover {
+  background-color: #e5ac00;
+}
+@media (max-width: 1300px) {
+  #desktop-3 .desktop3__container .desktop-main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  #desktop-3 .desktop3__container .desktop-main {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  #desktop-3 .desktop3__container .desktop-main .desktop-left {
+    width: 100%;
+  }
+  #desktop-3 .desktop3__container .desktop-main .desktop-left img {
+    width: 100%;
+  }
+  #desktop-3 .desktop3__container .desktop-main .desktop-right {
+    width: 100% !important;
+  }
+  #desktop-3 .desktop3__container .desktop-main .desktop-right form {
+    align-items: center;
+  }
+  #desktop-3 .desktop3__container .desktop-main .desktop-right form input {
+    width: 95%;
+    padding: 8px 12px 8px 12px !important;
+  }
+}
+@media (max-width: 550px) {
+  #desktop-3 .desktop-right form button {
+    padding: 13px !important;
+    width: 100%;
+  }
 }

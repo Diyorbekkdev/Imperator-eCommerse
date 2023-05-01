@@ -1,0 +1,79 @@
+#desktop-1 {
+  padding: 55px 0;
+  background-color: #f4f4f4;
+  .desktop1__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .desktop-left {
+      h1 {
+        font-family: "Montserrat";
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 64px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+      p {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.1px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        margin-top: 16px;
+        margin-bottom: 40px;
+      }
+      a {
+        background: #ffc000;
+        width: 262px !important;
+        border-radius: 6px;
+        text-align: center;
+        padding: 13px 20px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #0d0d0d;
+        cursor: pointer;
+        &:hover {
+          background-color: #e5ac00;
+        }
+      }
+    }
+  }
+  @media (max-width:900px) {
+    .desktop1__container {
+      flex-direction: column-reverse;
+      gap: 60px;
+      .desktop-left {
+        text-align: center;
+      }
+    }
+  }
+  @media(max-width:545px) {
+    .desktop1__container {
+      .desktop-right {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .desktop-left {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        h1 {
+          font-size: 34px;
+          line-height: 140%;
+        }
+        a {
+          width: 90% !important;
+        }
+      }
+    }
+  }
+}

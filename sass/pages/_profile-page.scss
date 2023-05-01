@@ -1,0 +1,177 @@
+#profil {
+  padding: 80px 0 80px;
+  background-color: #f4f4f4;
+  .profil__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    .profil-left {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      a {
+        background: #ffc000;
+        border-radius: 6px;
+        text-align: center;
+        padding: 10px 0;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #0d0d0d;
+        cursor: pointer;
+        &:hover {
+          background-color: #e5ac00;
+        }
+      }
+    }
+    .profil-right {
+      form {
+        display: flex;
+        gap: 130px;
+        label {
+          display: block;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #000000;
+          margin-bottom: 8px;
+          cursor: pointer;
+        }
+        input {
+          border: 1px solid #cecece;
+          border-radius: 6px;
+          padding: 8px 82px 8px 12px;
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 32px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #000000;
+          &::placeholder {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+          }
+          &:focus {
+            outline: 1px solid rgb(135, 135, 135);
+          }
+        }
+        .form-left {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          .password {
+            display: flex;
+            flex-direction: column;
+            a {
+              margin-top: -8px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 140%;
+              letter-spacing: 0.4px;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #ffc000;
+              &:hover {
+              color: #e9af00;
+              }
+            }
+            i {
+              position: relative;
+              right: -260px;
+              top: -33px;
+            }
+          }
+        }
+        .address {
+          input {
+            width: 313px;
+            padding: 8px 12px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .profil__container {
+      .profil-right {
+        form {
+          gap: 50px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1120px) {
+    .profil__container {
+      gap: 50px;
+    }
+  }
+  @media (max-width: 1040px) {
+    .profil__container {
+      flex-direction: column;
+      .profil-left {
+        align-items: center;
+        a {
+          padding: 10px 87px;
+        }
+      }
+      .profil-right {
+        form {
+          flex-direction: column;
+          gap: 16px;
+          .form-left {
+            width: 100%;
+            align-items: center;
+            div {
+              width: 100%;
+              input {
+                width: 94%;
+                padding: 10px 12px;
+              }
+            }
+            .password {
+              position: relative;
+              a {
+                margin-top: 8px;
+              }
+              i {
+                display: none;
+              }
+            }
+          }
+          .address {
+            width: 100%;
+            input {
+              padding: 10px 12px;
+              width: 94%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width:440px) {
+    .profil-left {
+      .profil-img {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      a {
+        padding: 10px 0 !important;
+        width: 100%;
+      }
+    }
+  }
+}

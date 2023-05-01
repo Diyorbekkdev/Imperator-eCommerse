@@ -1,0 +1,132 @@
+#desktop-3 {
+  padding: 56px 0 64px;
+  background-color: #e5e5e5;
+  .desktop3__container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    .desktop-title {
+      h1 {
+        text-align: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+    }
+    .desktop-main {
+      max-width: 1267px;
+      margin: 0 auto;
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      .desktop-right {
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 16px;
+          label {
+            display: block;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+            // margin-bottom: 8px;
+            cursor: pointer;
+          }
+          input {
+            border: 1px solid #a7a7a7;
+            border-radius: 6px;
+            padding: 8px 347px 8px 12px;
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+            &::placeholder {
+              font-family: "Montserrat";
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 32px;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #000000;
+            }
+            &:focus {
+              outline: 1px solid rgb(135, 135, 135);
+            }
+          }
+          button {
+            background: #ffc000;
+            border-radius: 6px;
+            text-align: center;
+            border: none;
+            padding: 13px 104px;
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #0d0d0d;
+            cursor: pointer;
+            &:hover {
+              background-color: #e5ac00;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width:1300px) {
+    .desktop3__container {
+      .desktop-main {
+        flex-direction: column;
+      }
+    }
+  }
+  @media(max-width:720px) {
+    .desktop3__container {
+      .desktop-main {
+        padding: 0 20px;
+        max-width: 100%;
+        .desktop-left {
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+        .desktop-right {
+          width: 100% !important;
+          form {
+            align-items: center;
+            // width: 100% !important;  
+            input {
+              width: 95%;
+              padding: 8px 12px 8px 12px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width:550px) {
+    .desktop-right {
+      form {
+        button {
+          padding: 13px !important;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
