@@ -1,177 +1,320 @@
-#profil {
-  padding: 80px 0 80px;
-  background-color: #f4f4f4;
-  .profil__container {
-    display: flex;
-    justify-content: space-between;
-    gap: 130px;
-    .profil-left {
+.jorabek-profil {
+  #profil {
+    padding: 80px 0 80px;
+    background-color: #f4f4f4;
+    .profil__container {
       display: flex;
-      flex-direction: column;
-      gap: 16px;
-      a {
-        background: #ffc000;
-        border-radius: 6px;
-        text-align: center;
-        padding: 10px 0;
-        font-family: "Montserrat";
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 140%;
-        text-align: center;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #0d0d0d;
-        cursor: pointer;
-        &:hover {
-          background-color: #e5ac00;
-        }
-      }
-    }
-    .profil-right {
-      form {
+      justify-content: space-between;
+      gap: 130px;
+      .profil-left {
         display: flex;
-        gap: 130px;
-        label {
-          display: block;
+        flex-direction: column;
+        gap: 16px;
+        a {
+          background: #ffc000;
+          border-radius: 6px;
+          text-align: center;
+          padding: 10px 0;
           font-family: "Montserrat";
-          font-style: normal;
           font-weight: 700;
           font-size: 16px;
-          line-height: 24px;
+          line-height: 140%;
+          text-align: center;
           font-feature-settings: "pnum" on, "lnum" on;
-          color: #000000;
-          margin-bottom: 8px;
+          color: #0d0d0d;
           cursor: pointer;
+          &:hover {
+            background-color: #e5ac00;
+          }
         }
-        input {
-          border: 1px solid #cecece;
-          border-radius: 6px;
-          padding: 8px 82px 8px 12px;
-          font-family: "Montserrat";
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 32px;
-          font-feature-settings: "pnum" on, "lnum" on;
-          color: #000000;
-          &::placeholder {
+      }
+      .profil-right {
+        form {
+          display: flex;
+          gap: 130px;
+          label {
+            display: block;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+            margin-bottom: 8px;
+            cursor: pointer;
+          }
+          input {
+            border: 1px solid #cecece;
+            border-radius: 6px;
+            padding: 8px 82px 8px 12px;
             font-family: "Montserrat";
             font-weight: 400;
             font-size: 16px;
             line-height: 32px;
             font-feature-settings: "pnum" on, "lnum" on;
             color: #000000;
+            &::placeholder {
+              font-family: "Montserrat";
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 32px;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #000000;
+            }
+            &:focus {
+              outline: 1px solid rgb(135, 135, 135);
+            }
           }
-          &:focus {
-            outline: 1px solid rgb(135, 135, 135);
-          }
-        }
-        .form-left {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-          .password {
+          .form-left {
             display: flex;
             flex-direction: column;
-            a {
-              margin-top: -8px;
-              font-family: "Montserrat";
-              font-style: normal;
-              font-weight: 600;
-              font-size: 12px;
-              line-height: 140%;
-              letter-spacing: 0.4px;
-              font-feature-settings: "pnum" on, "lnum" on;
-              color: #ffc000;
-              &:hover {
-              color: #e9af00;
-              }
-            }
-            i {
-              position: relative;
-              right: -260px;
-              top: -33px;
-            }
-          }
-        }
-        .address {
-          input {
-            width: 313px;
-            padding: 8px 12px;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 1200px) {
-    .profil__container {
-      .profil-right {
-        form {
-          gap: 50px;
-        }
-      }
-    }
-  }
-  @media (max-width: 1120px) {
-    .profil__container {
-      gap: 50px;
-    }
-  }
-  @media (max-width: 1040px) {
-    .profil__container {
-      flex-direction: column;
-      .profil-left {
-        align-items: center;
-        a {
-          padding: 10px 87px;
-        }
-      }
-      .profil-right {
-        form {
-          flex-direction: column;
-          gap: 16px;
-          .form-left {
-            width: 100%;
-            align-items: center;
-            div {
-              width: 100%;
-              input {
-                width: 94%;
-                padding: 10px 12px;
-              }
-            }
+            gap: 16px;
             .password {
-              position: relative;
+              display: flex;
+              flex-direction: column;
               a {
-                margin-top: 8px;
+                margin-top: -8px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0.4px;
+                font-feature-settings: "pnum" on, "lnum" on;
+                color: #ffc000;
+                &:hover {
+                  color: #e9af00;
+                }
               }
               i {
-                display: none;
+                position: relative;
+                right: -260px;
+                top: -33px;
               }
             }
           }
           .address {
-            width: 100%;
             input {
-              padding: 10px 12px;
-              width: 94%;
+              width: 313px;
+              padding: 8px 12px;
             }
           }
         }
       }
     }
-  }
-  @media (max-width:440px) {
-    .profil-left {
-      .profil-img {
-        width: 100%;
-        img {
+    @media (max-width: 1200px) {
+      .profil__container {
+        .profil-right {
+          form {
+            gap: 50px;
+          }
+        }
+      }
+    }
+    @media (max-width: 1120px) {
+      .profil__container {
+        gap: 50px;
+      }
+    }
+    @media (max-width: 1040px) {
+      .profil__container {
+        flex-direction: column;
+        .profil-left {
+          align-items: center;
+          a {
+            padding: 10px 87px;
+          }
+        }
+        .profil-right {
+          form {
+            flex-direction: column;
+            gap: 16px;
+            .form-left {
+              width: 100%;
+              align-items: center;
+              div {
+                width: 100%;
+                input {
+                  width: 94%;
+                  padding: 10px 12px;
+                }
+              }
+              .password {
+                position: relative;
+                a {
+                  margin-top: 8px;
+                }
+                i {
+                  display: none;
+                }
+              }
+            }
+            .address {
+              width: 100%;
+              input {
+                padding: 10px 12px;
+                width: 94%;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 440px) {
+      .profil-left {
+        .profil-img {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        a {
+          padding: 10px 0 !important;
           width: 100%;
         }
       }
-      a {
-        padding: 10px 0 !important;
-        width: 100%;
-      }
     }
+  }
+  .heading_8264 {
+    position: absolute;
+    letter-spacing: 0.2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+
+  .logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+  }
+
+  .chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+
+  .contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+  }
+
+  .number {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.6em;
+    top: 8.3em;
+    left: 1.6em;
+  }
+
+  .valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: 0.01em;
+    left: 140.3em;
+  }
+
+  .date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+  }
+
+  .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+  }
+
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+
+  .mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: 0.8em;
+    border-radius: 2.5px;
+  }
+
+  .sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+  }
+
+  .code {
+    font-weight: bold;
+    text-align: center;
+    margin: 0.2em;
+    color: black;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+
+  .flip-card-front {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+  }
+
+  .flip-card-back {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+    transform: rotateY(180deg);
   }
 }

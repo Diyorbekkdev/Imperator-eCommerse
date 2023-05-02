@@ -36,6 +36,7 @@ $white: #fff;
           }
         }
         .m16_card_content {
+          
           padding: 25px 48px 27px 30px;
           h2 {
             color: $black;
@@ -43,6 +44,7 @@ $white: #fff;
             font-weight: 700;
           }
           .m16_card_p {
+            max-width: 754px !important;
             font-size: 14px;
             line-height: 160%;
             margin-top: 70px;
@@ -99,14 +101,14 @@ $white: #fff;
             margin-right: 15px;
           }
           .m16_card_content {
-            width: 90%;
+            // width: 90%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 0px;
             .m16_card_h2 {
               text-align: left;
-              font-size: 28px;
+              // font-size: 28px;
             }
             .m16_card_p {
               display: none;
@@ -143,3 +145,9 @@ $white: #fff;
     }
   }
 }
+
+
+
+// .16_main .m16_product .m16_cards .m16_card .m16_card_content {
+//   padding: 25px 48px 27px 30px;
+// }

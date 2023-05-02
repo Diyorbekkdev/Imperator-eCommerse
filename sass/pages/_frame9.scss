@@ -1,0 +1,128 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+#frame-9 {
+  padding: 144px 0 64px;
+  background-color: $light-grey;
+}
+.f9-container {
+  h4 {
+    @include heading(h4);
+    text-align: center;
+  }
+  .f9-box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    max-width: 1146px;
+    margin: 32px auto 0;
+    background: $white;
+    border-radius: 12px;
+    padding: 35px;
+    @media(max-width:600px){
+      flex-direction: column;
+    }
+    .left{
+      img{
+        width: 200px;
+        // width: 100%;
+      }
+    }
+    .box-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h5 {
+        @include heading(h5);
+      }
+    }
+    .box-txt {
+      margin: 43px 0 35px;
+      max-width: 754px;
+      p {
+        @include heading(subtitle-2);
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0.25px;
+        margin-top: 8px;
+        text-align: justify;
+      }
+    }
+    .box-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media(max-width: 500px){
+        flex-direction: column;
+        gap: 30px;
+      }
+      .bottom-p {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .plus-minus {
+        display: flex;
+        .counter-minus,
+        .counter-plus {
+          padding: 8px 14px;
+          background-color: $yellow;
+          color: white;
+          border: none;
+          font-size: 20px;
+          transition: 0.4s;
+          &:hover {
+            transform: scale(1.1);
+            background-color: orangered;
+          }
+        }
+        .counter-display {
+          padding: 8px 25px;
+          text-align: center;
+          background: #f2f2f2;
+          border: none;
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  .f9-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 28px;
+    .orange-btn,
+    .red-btn {
+      padding: 18px 0;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.75px;
+      text-transform: uppercase;  
+      text-align: center;
+      color: white;
+      transition: 0.4s;
+    }
+    .orange-btn{
+      width: 376px;
+      background-color: $yellow;
+      align-self: flex-end;
+      @media(max-width: 500px){
+        width: 100%;
+      }
+      &:hover{
+        background-color: #ff8c00;
+      }
+    }
+    .red-btn{
+      width: 100%;
+      background: #FF5959;
+      margin-top: 32px;
+      &:hover{
+        background-color: #ff0000;
+      }
+    }
+  }
+}

@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
     <!-- owl carousel 2 link -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
     <title>Imperator | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,73 +34,103 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <!-- --- NAVBAR-START --- -->
-    <div id="language">
-      <div class="container">
-        <div class="lang">
-          <a href="#">RU</a>
-          <a href="#">UZB</a>
-        </div>
+    
+    <div class="loading_main">
+      <div id="loading">
+        <div class="preloader">
+          <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+              <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                <circle cx="43" cy="111" r="13" />
+                <circle cx="102" cy="111" r="13" />
+              </g>
+              <g class="cart__lines" stroke="currentColor">
+                <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                  <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                </g>
+                <g class="cart__wheel2" transform="rotate(90,102,111)">
+                  <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div class="preloader__text">
+            <p class="preloader__msg">Bringing you the goods…</p>
+        <p class="preloader__msg preloader__msg--last">This is taking long. Something’s wrong.</p>
       </div>
     </div>
-    <nav id="navbar">
-      <div class="container navbar__container">
-        <div class="nav-left">
-          <button class="hamburger" id="navbar-open">
+  </div>
+</div>
+
+   <!-- --- NAVBAR-START --- -->
+   <div id="language">
+    <div class="container">
+      <div class="lang">
+        <a href="#">RU</a>
+        <a href="#">UZB</a>
+      </div>
+    </div>
+  </div>
+  <nav id="navbar">
+    <div class="container navbar__container">
+      <div class="nav-left">
+        <button class="hamburger" id="navbar-open">
+          <img
+            width="40px"
+            src="./assets/images/sotrudnichestvo/hamburger.svg"
+            alt="menu"
+          />
+        </button>
+        <a class="mobile-img" href="#">
+          <img width="41px" src="assets/images/home/logo-footer.svg" alt="" />
+        </a>
+        <a class="desktop-img" href="#">
+          <img class="milandi" src="assets/images/sotrudnichestvo/MILANDI.svg" alt="" />
+        </a>
+      </div>
+      <div class="nav-middle" id="navbar-responsive">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item"><a href="./mackbook-11.html" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="category.html" class="nav-link">Категории</a></li>
+          <li class="nav-item">
+            <a href="./sotrudnichestvo.html" class="nav-link">Сотрудничество</a>
+          </li>
+          <button class="close" id="navbar-close">
             <img
-              width="40px"
-              src="./assets/images/sotrudnichestvo/hamburger.svg"
-              alt="menu"
+              width="45px"
+              src="./assets/images/sotrudnichestvo/close.svg"
+              alt="close"
             />
           </button>
-          <a class="mobile-img" href="#">
-            <img width="41px" src="assets/images/home/logo-footer.svg" alt="" />
-          </a>
-          <a class="desktop-img" href="#">
-            <img class="milandi" src="assets/images/sotrudnichestvo/MILANDI.svg" alt="" />
-          </a>
-        </div>
-        <div class="nav-middle" id="navbar-responsive">
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Категории</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Сотрудничество</a>
-            </li>
-            <button class="close" id="navbar-close">
-              <img
-                width="45px"
-                src="./assets/images/sotrudnichestvo/close.svg"
-                alt="close"
-              />
-            </button>
-            <div class="nav-btns">
-              <a href="#">Войти</a>
-              <a href="#">Зарегистрироваться</a>
-            </div>
-          </ul>
-        </div>
-        <div class="nav-right">
-          <div class="nav-right-btns">
-            <a href="#">Войти</a>
-            <a href="#">Зарегистрироваться</a>
+          <div class="nav-btns">
+            <a href="./desktop2.html">Войти</a>
+            <a href="./desktop3.html">Зарегистрироваться</a>
           </div>
-          <a href="#" class="shop_abs">
-            <img src="assets/images/home/korzinka-navbar.svg" alt="" />
-          </a>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="nav-right-btns">
+          <a href="./desktop2.html">Войти</a>
+          <a href="./desktop3.html">Зарегистрироваться</a>
         </div>
+        <a href="./desktop1.html" class="shop_abs">
+          <img src="assets/images/home/korzinka-navbar.svg" alt="" />
+        </a>
       </div>
-      <div class="shopping_card">
-        <h1>Card</h1>
-        <ul>listCard</ul>
-        <div class="checkout">
-          <div class="total">0</div>
-          <div class="closeShopping">Close</div>
-        </div>   
-      </div>
-    </nav>
-    <!-- --- NAVBAR-END --- -->
+    </div>
+    <div class="shopping_card">
+      <h1>Card</h1>
+      <ul>listCard</ul>
+      <div class="checkout">
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+      </div>   
+    </div>
+  </nav>
+  <!-- --- NAVBAR-END --- -->
     
 
     <div class="header" id="header">
@@ -1613,23 +1643,26 @@
 <!--===Style Switcher Start===-->
      <!-- DARK MODE SWITCHER STYLES -->
 
+     
+     <!-- j 1 quary -->
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+     ></script>
+     <!-- owl carousel min js -->
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      ></script>
+      <script src="js/carousel.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/darkmode.js"></script>
+      <script src="js/loading.js"></script>
 
-    <!-- j 1 quary -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- owl carousel min js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/darkmode.js"></script>
-  </body>
-</html>
+    </body>
+    </html>
+    
