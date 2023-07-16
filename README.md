@@ -26,7 +26,7 @@ Diyorbek served as the team leader for the Milandi e-commerce project, overseein
 
 To run the Milandi e-commerce website locally, follow these steps:
 
-1. Clone this repository: `git clone [https://github.com/your-username/milandi-ecommerce.git](https://github.com/Diyorbekkdev/Imperator-eCommerse.git)`
+1. Clone this repository: `git clone [(https://github.com/Diyorbekkdev/Imperator-eCommerse.git)](https://github.com/Diyorbekkdev/Imperator-eCommerse.git)`
 2. Navigate to the project directory: `cd milandi-ecommerce`
 3. Open `index.html` in your preferred web browser.
 
