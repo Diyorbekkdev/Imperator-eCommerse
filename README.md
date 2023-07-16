@@ -1,5 +1,4 @@
 # Milandi E-commerce Website
-
 This is the repository for the Milandi e-commerce website developed by the CodeBreakers team, led by Diyorbek. The website was built using HTML, CSS, and JavaScript, following the 7-1 SCSS structure for styling and leveraging JavaScript's DOM manipulation for dynamic interactivity.
 
 ## Project Structure
